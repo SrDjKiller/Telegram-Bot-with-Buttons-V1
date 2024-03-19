@@ -4,7 +4,7 @@ import google.auth
  
 # Preparation for Google API
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
-calendar_id = '68d5d17edeab70cddeb9f5b15676f683e9e101f509e307e5937c0f3cd7f3d496@group.calendar.google.com'
+calendar_id = 'CALENDAR IDA'
 gapi_creds = google.auth.load_credentials_from_file('config/credenciales.json', SCOPES)[0]
 service = googleapiclient.discovery.build('calendar', 'v3', credentials=gapi_creds)
 fecha_actual = datetime.datetime.now()
